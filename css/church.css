@@ -1,0 +1,107 @@
+.venue-church h1 {
+  font-family: 'Andasia', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #800020;
+  font-weight: 100; 
+}
+
+.venue-church-content {
+  display: flex;
+  text-align: center;
+}
+
+.church-img {
+  width: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.church-details {
+  position: relative; 
+  border-radius: 8px;
+  margin-left: 20px;
+  padding: 20px;
+  padding-top: 80px;
+  z-index: 1;
+}
+
+.church-details::before {
+  content: "";
+  position: absolute; 
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  border-radius: 10px;
+  background: url('../images/background 5.png') center/cover no-repeat;
+  opacity: 0.6;  
+  z-index: -1;
+}
+
+
+.church-detail {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  color: #800020;
+  font-weight: 500;
+}
+
+.church-details a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  color: #800020;
+  font-weight: 500;
+}
+
+.direction-link {
+  color: #800020;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.direction-link:hover {
+  text-decoration: underline;
+}
+
+.small-p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: #800020;
+  margin-top: 20px;
+}
+
+.venue-church-content {
+  display: flex;
+  text-align: center;
+  position: relative; 
+}
+
+.ring-img {
+  position: absolute;
+  bottom: -90px;
+  left: 75%;
+  transform: translateX(-50%);
+  width: 200px; 
+  z-index: 2;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .venue-church-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .church img {
+    width: 80%;
+    max-width: 300px;
+  }
+  .venue-church h1 {
+    font-size: 28px;
+  }
+  .church-details p {
+    font-size: 16px;
+  }
+}

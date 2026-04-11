@@ -1,0 +1,97 @@
+.invitation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.opened-envelope-container {
+    position: relative;
+    width: 598px;          
+    height: auto;
+    margin: 50px auto;     
+}
+
+.opened-envelope-container.animate-envelope {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.envelope-bottom {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 5;
+    filter: drop-shadow(0 15px 20px rgba(0,0,0,0.25));
+}
+
+.photos-stack {
+    position: absolute;
+    bottom: 460px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 250px;
+    z-index: 4;
+}
+
+.photo {
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    border-radius: 6px;
+    background: white;
+    padding: 8px;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.25),
+        0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 1.2s ease;
+}
+
+.photo-1 {
+    width: 380.99px;
+    height: auto;
+    z-index: 2;
+    transform: translateX(-50%) translateY(300px) rotate(-8deg);
+}
+
+.photo-2 {
+    width: 333.386px; 
+    height: auto;
+    z-index: 3;
+    transform: translateX(-50%) translateY(300px) rotate(5deg);
+}
+
+.photo-3 {
+    width: 462.949px; 
+    height: 255.983px;
+    z-index: 4;
+    transform: translateX(-50%) translateY(430px) rotate(5deg);
+}
+
+.envelope-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    transform-origin: top center;
+    transition: transform 1s ease;
+}
+
+.envelope-photo {
+    width: 30%; 
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.envelope-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 598px;
+    z-index: 1;
+    transition: transform 1s ease;
+    transform-origin: top center;
+}

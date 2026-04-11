@@ -1,0 +1,93 @@
+.god-parents {
+    margin-top: 100px;
+    position: relative; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;      
+    grid-template-rows: auto auto;       
+    grid-template-areas:
+        "god god"                         
+        "best-man maid-of-honor";        
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.god-parents::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/background 5.png') center/cover no-repeat;
+    opacity: 0.6;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.god-parents-list { grid-area: god; }
+.best-man { grid-area: best-man; text-align: center; }
+.maid-of-honor { grid-area: maid-of-honor; text-align: center; }
+
+.god-parents-list h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: #800020;
+}
+
+.god-parents-list ul {
+    display: inline-block;      
+    vertical-align: top;
+    margin: 0 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    color: #A5665D;
+    font-weight: 700;
+}
+
+
+.best-man h1, .maid-of-honor h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: #800020;
+    margin-bottom: 10px;
+}
+
+.best-man p, .maid-of-honor p {
+    font-family: 'Cormorant Garamond', serif;
+    color: #A5665D;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.best-man, .maid-of-honor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .god-parents {
+        grid-template-columns: 1fr;         
+        grid-template-areas:
+            "god"
+            "best-man"
+            "maid-of-honor";
+    }
+
+    .best-man, .maid-of-honor {
+        text-align: center;
+    }
+
+    .god-parents-list ul {
+        display: block;                  
+        margin: 10px auto;
+        text-align: center;
+    }
+}

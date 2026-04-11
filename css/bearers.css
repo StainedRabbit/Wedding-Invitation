@@ -1,0 +1,37 @@
+.bearers {
+    position: relative;
+    margin-top: 100px;
+    display: grid;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.bearers::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0; 
+    background: url('../images/background 5.png') center/cover no-repeat;
+    opacity: 0.6;
+    border-radius: 10px;
+    z-index: -1;
+    box-sizing: border-box; 
+}
+
+.bearers h1 {
+    margin-bottom: 10px;
+    color: #800020;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.bearers p {
+    font-family: 'Cormorant Garamond', serif;
+    color: #A5665D;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 4px 0;
+    text-align: center;
+}

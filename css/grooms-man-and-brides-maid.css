@@ -1,0 +1,73 @@
+.grooms-man-and-brides-maid {
+    margin-top: 100px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "groomsman bridesmaid"
+        "bottom bottom";
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center; 
+    z-index: 1;
+}
+
+.grooms-man-and-brides-maid::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/background 5.png') center/cover no-repeat;
+    opacity: 0.6;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.grooms-man { grid-area: groomsman; text-align: center; }
+.brides-maid { grid-area: bridesmaid; text-align: center; }
+.bottom-rituals { grid-area: bottom; justify-content: center; gap: 50px; flex-wrap: wrap; }
+
+.grooms-man h1, .brides-maid h1, .bottom-rituals h1 {
+    color: #800020;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.grooms-man ul, .brides-maid ul {
+    font-family: 'Cormorant Garamond', serif;
+    color: #A5665D;
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+}
+
+.grooms-man li, .brides-maid li, .bottom-rituals p {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    margin: 4px 0;
+    font-weight: 700;
+    color: #A5665D;
+    font-size: 20px;
+}
+
+.bottom-rituals div { text-align: center; }
+
+@media (max-width: 768px) {
+    .grooms-man-and-brides-maid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "groomsman"
+            "bridesmaid"
+            "bottom";
+        text-align: center;
+    }
+
+    .grooms-man ul, .brides-maid ul {
+        display: block;
+        margin: 0 auto;
+    }
+}
