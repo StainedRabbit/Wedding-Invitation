@@ -1,0 +1,142 @@
+
+.save-date {
+    text-align: center;
+    margin: 4rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 0;
+    overflow: hidden; /* prevent overflow issues */
+}
+
+/* BACKGROUND (bottom layer) */
+.save-date::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/background 4.png') center/cover no-repeat;
+    opacity: 0.6;
+    z-index: 0; /* lowest */
+}
+
+/* SECOND IMAGE (middle layer) */
+.overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* transparency */
+    z-index: 1;
+}
+
+/* TEXT CONTENT (top layer) */
+.save-date > *:not(.overlay) {
+    position: relative;
+    z-index: 2;
+}
+
+.save-date h1 {
+    font-family: 'Andasia', serif;
+    font-size: 7rem;
+    font-weight: 540;
+    color: #800020;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.datetime {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+    color: #800020;
+}
+
+.datetime span {
+    padding: 0.5rem 1rem;
+    background: #f5ebe0;
+    border-radius: 30px;
+}
+
+
+.names {
+    text-align: center;
+    color: #800020;
+}
+
+.names h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 6rem;
+    margin: 0;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+
+.desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+}
+
+.date {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 3rem;
+    color: #800020;
+    border-right: 6px solid #800020;
+    padding-right: 20px;
+}
+
+.time {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #800020;
+    font-weight: 600;
+}
+
+.day {
+    margin-top: -50px;
+    margin-bottom: -50px;
+    font-size: 10rem;
+    font-weight: 600;
+}
+
+
+.amp {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 6rem;
+    margin: -20px;
+    color: #800020;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1fr 1fr 1.5fr;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        gap: 0.5rem;
+    }
+    
+    .initial {
+        font-size: 2.5rem;
+    }
+    
+    .datetime {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .wedding-party {
+        grid-template-columns: 1fr;
+    }
+}

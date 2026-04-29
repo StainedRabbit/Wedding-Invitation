@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 photo.style.transform =
                     `translateX(${photo.classList.contains('photo-1') ? '-77%' : 
                         photo.classList.contains('photo-2') ? '-15%' : '-50%'}) 
-                    translateY(${photo.classList.contains('photo-1') ? '100px' : 
-                        photo.classList.contains('photo-2') ? '80px' : '290px'}) 
+                    translateY(${photo.classList.contains('photo-1') ? '70px' : 
+                        photo.classList.contains('photo-2') ? '70px' : '250px'}) 
                     rotate(${photo.classList.contains('photo-1') ? '-8deg' : 
                         photo.classList.contains('photo-2') ? '5deg' : '-12deg'})`;
             }, 50);

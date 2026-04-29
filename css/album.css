@@ -1,0 +1,38 @@
+.album {
+  padding: 4rem 2rem;
+  background: #faf7f2;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.album-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.album-item img,
+.album-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Smooth hover zoom */
+.album-item img {
+  transition: transform 0.5s ease;
+}
+
+.album-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Video styling */
+.video-item video {
+  height: 100%;
+}

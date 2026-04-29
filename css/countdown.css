@@ -1,0 +1,23 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  color: #800020;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.countdown div {
+  text-align: center;
+}
+
+.countdown span {
+  display: block;
+  font-size: 9rem;
+  font-weight: 700;
+}
+
+.countdown small {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}

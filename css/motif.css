@@ -69,8 +69,8 @@
 .motif-item:nth-child(5) { transform: translateY(100px);}
 
 .motif-color {
-    height: 280px;
-    width: 72px;
+    height: 331px;
+    width: 109px;
 }
 
 @media (max-width: 768px) {
