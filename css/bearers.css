@@ -40,10 +40,10 @@
 
 @media (max-width: 768px) {
     .bearers h1 {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
     .bearers p{
-        font-size: 1.8rem;
+        font-size: 1.25rem;
     }
 }

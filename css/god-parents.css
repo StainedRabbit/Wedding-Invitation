@@ -86,33 +86,29 @@
     }
 
     .god-parents-list ul {
-        display: block;                  
-        margin: 10px auto;
+        display: block;     
         text-align: center;
+        padding-left: 0px;
+        font-size: 1.25rem;
     }
 
     .god-parents-list h1 {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
     
     .best-man h1{
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
     
     .maid-of-honor h1{
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
-    .god-parents-list li {
-        font-size: 1.8rem;
-    }
-
-    .best-man p {
-        font-size: 1.8rem;
-    }
-
+    .god-parents-list li,
+    .best-man p ,
     .maid-of-honor p {
-        font-size: 1.8rem;
+        font-size: 1.25rem;
     }
+
 }

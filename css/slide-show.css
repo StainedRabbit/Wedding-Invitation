@@ -63,3 +63,14 @@
   height: 40%;
   background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
 }
+
+@media screen and (max-width: 768px) {
+  .caption p {
+    font-size: 1rem;
+  }
+
+  .caption span {
+    font-size: 0.8rem;
+  }
+  
+}

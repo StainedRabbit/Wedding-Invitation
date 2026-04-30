@@ -8,19 +8,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let isPlaying = false;
 
-    // 🔥 Photo animation function
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
     function animatePhotos() {
         photos.forEach((photo) => {
-            photo.style.transform = "none"; // reset
+            photo.style.transform = "none";
 
             setTimeout(() => {
-                photo.style.transform =
-                    `translateX(${photo.classList.contains('photo-1') ? '-77%' : 
-                        photo.classList.contains('photo-2') ? '-15%' : '-50%'}) 
-                    translateY(${photo.classList.contains('photo-1') ? '70px' : 
-                        photo.classList.contains('photo-2') ? '70px' : '250px'}) 
-                    rotate(${photo.classList.contains('photo-1') ? '-8deg' : 
-                        photo.classList.contains('photo-2') ? '5deg' : '-12deg'})`;
+
+                let x, y, rotate;
+
+                if (isMobile) {
+                    if (photo.classList.contains('photo-1')) {
+                        x = '-86%';
+                        y = '-136px';
+                        rotate = '-8deg';
+                    } else if (photo.classList.contains('photo-2')) {
+                        x = '-15%';
+                        y = '-150px';
+                        rotate = '5deg';
+                    } else {
+                        x = '-50%';
+                        y = '-60px';
+                        rotate = '-12deg';
+                    }
+
+                } else {
+                    // 💻 DESKTOP (your original values)
+                    if (photo.classList.contains('photo-1')) {
+                        x = '-77%';
+                        y = '70px';
+                        rotate = '-8deg';
+                    } else if (photo.classList.contains('photo-2')) {
+                        x = '-15%';
+                        y = '70px';
+                        rotate = '5deg';
+                    } else {
+                        x = '-50%';
+                        y = '250px';
+                        rotate = '-12deg';
+                    }
+                }
+
+                photo.style.transform = `
+                    translateX(${x})
+                    translateY(${y})
+                    rotate(${rotate})
+                `;
             }, 50);
         });
     }
