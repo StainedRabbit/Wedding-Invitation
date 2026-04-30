@@ -90,4 +90,29 @@
         margin: 10px auto;
         text-align: center;
     }
+
+    .god-parents-list h1 {
+        font-size: 3.5rem;
+    }
+
+    
+    .best-man h1{
+        font-size: 3.5rem;
+    }
+    
+    .maid-of-honor h1{
+        font-size: 3.5rem;
+    }
+
+    .god-parents-list li {
+        font-size: 1.8rem;
+    }
+
+    .best-man p {
+        font-size: 1.8rem;
+    }
+
+    .maid-of-honor p {
+        font-size: 1.8rem;
+    }
 }

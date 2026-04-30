@@ -35,3 +35,15 @@
     margin: 4px 0;
     text-align: center;
 }
+
+
+
+@media (max-width: 768px) {
+    .bearers h1 {
+        font-size: 3.5rem;
+    }
+
+    .bearers p{
+        font-size: 1.8rem;
+    }
+}
