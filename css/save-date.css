@@ -144,6 +144,10 @@
         grid-template-columns: 1fr;
     }
 
+    .save-date h1{
+        font-size: 3rem;
+    }
+
     .names h1{
         font-size: 3rem;
     }

@@ -26,13 +26,13 @@
 @media (max-width: 768px) {
   .countdown span {
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
   }
 
 
   .countdown small {
-    font-size: 2rem;
+    font-size: 1rem;
     letter-spacing: 1px;
   }
 }

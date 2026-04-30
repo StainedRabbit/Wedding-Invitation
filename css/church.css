@@ -95,7 +95,7 @@
   }
 
   .venue-church h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
   }
 
@@ -109,7 +109,7 @@
 
   .church-img {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
   }
 
@@ -139,5 +139,6 @@
 
   .church-details::before {
     top: 80px;
+    height: 75%;
   }
 }
