@@ -69,19 +69,51 @@
 .motif-item:nth-child(5) { transform: translateY(100px);}
 
 .motif-color {
-    height: 280px;
-    width: 72px;
+    height: 331px;
+    width: 109px;
 }
 
-@media (max-width: 768px) {
-    .motif-row {
-        overflow-x: auto;        
-        justify-content: flex-start;
-        padding: 10px;
-    }
 
-    .motif-row img {
-        height: 110px;           
-        flex-shrink: 0;       
-    }
+@media (max-width: 1150px) {
+
+  .motif {
+    margin: 150px 0;
+    padding: 0 16px;
+  }
+
+  .motif h1 {
+    font-size: 3rem;
+  }
+
+  /* switch layout */
+  .motif-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-items: center;
+  }
+
+  /* reset desktop transforms */
+  .motif-item {
+    transform: none !important;
+  }
+
+  /* override fixed image sizes */
+  .motif-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .motif-item p {
+    font-size: 1.5rem;
+    padding: 4px 8px;
+  }
+
+  /* palette image */
+  .motif-color img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
 }

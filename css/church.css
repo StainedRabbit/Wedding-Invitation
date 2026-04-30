@@ -84,24 +84,60 @@
   left: 75%;
   transform: translateX(-50%);
   width: 200px; 
-  z-index: 2;
+  z-index: -1;
   opacity: 1;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
+  .venue-church {
+    padding: 0 16px;
+  }
+
+  .venue-church h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
   .venue-church-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 12px;
   }
-  .church img {
-    width: 80%;
-    max-width: 300px;
+
+  .church-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
-  .venue-church h1 {
-    font-size: 28px;
+
+  .church-details {
+    width: 100%;
   }
-  .church-details p {
-    font-size: 16px;
+
+  .church-detail {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  .direction-link {
+    display: inline-block;
+    font-size: 19px;
+    word-break: break-word;
+  }
+
+  .small-p {
+    font-size: 14px;
+  }
+
+  .ring-img {
+    width: 200px;
+    height: auto;
+  }
+
+  .church-details::before {
+    top: 80px;
   }
 }

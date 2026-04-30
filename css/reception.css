@@ -85,25 +85,60 @@
   left: 75%;
   transform: translateX(-50%);
   width: 200px; 
-  z-index: 2;
+  z-index: -1;
   opacity: 1;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .venue-reception {
+    padding: 0 16px;
+  }
+
+  .venue-reception h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem); /* safer than fixed 5rem */
+    text-align: center;
+  }
+
   .venue-reception-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 12px;
   }
-  .reception img {
-    width: 80%;
-    max-width: 300px;
+
+  .reception-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
-  .venue-reception h1 {
-    font-size: 28px;
+
+  .reception-details {
+    width: 100%;
   }
-  .reception-details p {
-    font-size: 16px;
+
+  /* This targets your "Anita's Restaurant" title */
+  .reception-details h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  .direction-link {
+    display: inline-block;
+    font-size: 19px;
+    word-break: break-word;
+  }
+
+  /* Decorative image */
+  .mr-and-mrs-img {
+    width: 200px;
+    height: auto;
+  }
+
+
+  
+  .reception-details::before {
+    top: 80px;
   }
 }
