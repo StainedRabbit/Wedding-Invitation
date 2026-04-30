@@ -128,15 +128,38 @@
     }
     
     .initial {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .datetime {
         flex-direction: column;
         gap: 0.8rem;
     }
+
+    .date {
+        font-size: 2rem;
+    }
     
     .wedding-party {
         grid-template-columns: 1fr;
+    }
+
+    .names h1{
+        font-size: 3rem;
+    }
+
+    .amp {
+        font-size: 3rem;
+    }
+
+    .desc {
+        font-size: 1rem;
+    }
+    
+    .day {
+        margin-top: -20px;
+        margin-bottom: -30px;
+        font-size: 3rem;
+        font-weight: 600;
     }
 }
