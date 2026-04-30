@@ -33,6 +33,7 @@
     font-size: 2.5rem;
     font-weight: 100;
     color: #800020;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, .4);
 }
 
 .god-parents-list ul {

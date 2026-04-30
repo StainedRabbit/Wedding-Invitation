@@ -31,6 +31,7 @@
 .motif h1 {
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
 }
 .motif-row {
     display: flex;

@@ -4,6 +4,7 @@
   text-align: center;
   color: #800020;
   font-weight: 100; 
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
 }
 
 .venue-church-content {
