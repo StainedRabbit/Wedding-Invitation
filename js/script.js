@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (isMobile) {
                     if (photo.classList.contains('photo-1')) {
-                        x = '-86%';
+                        x = '-82%';
                         y = '-136px';
                         rotate = '-8deg';
                     } else if (photo.classList.contains('photo-2')) {
-                        x = '-15%';
+                        x = '-20%';
                         y = '-150px';
                         rotate = '5deg';
                     } else {
