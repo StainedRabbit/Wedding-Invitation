@@ -127,4 +127,11 @@
         padding-left: 0px;
         font-size: 1.25rem;
     }
+
+
+    .grand-parents li,
+    .parents-of-the-bride li,
+    .parents-of-the-groom li {
+        text-align: center;
+    }
 }
