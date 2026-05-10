@@ -28,7 +28,7 @@
 .bottom-rituals { grid-area: bottom; justify-content: center; gap: 50px; flex-wrap: wrap; }
 
 .grooms-man h1, .brides-maid h1, .bottom-rituals h1 {
-    color: #800020;
+    color: #F8F1E7;
     font-size: 2rem;
     font-weight: 100;
 }

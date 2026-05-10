@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
-  color: #800020;
+  margin-bottom: 1rem;
+  color: #F8F1E7;
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -28,7 +28,7 @@
 @media (max-width: 768px) {
   .countdown span {
     display: block;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
   }
 
