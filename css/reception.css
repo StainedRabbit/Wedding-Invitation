@@ -1,12 +1,13 @@
 .venue-reception {
   margin-top: 150px;
+  padding-bottom: 150px;
 }
 
 .venue-reception h1 {
   font-family: 'Andasia', sans-serif;
   font-size: 4rem;
   text-align: center;
-  color: #800020;
+  color: #F8F1E7;
   font-weight: 550;
   text-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
 }
@@ -31,7 +32,6 @@
   border-radius: 8px;
   margin-left: 20px;
   padding: 20px;
-  padding-top: 80px;
   z-index: 1;
 }
 
@@ -43,7 +43,6 @@
   width: 100%;
   height: 65%;
   border-radius: 8px;
-  background: url('../images/background 5.png') center/cover no-repeat;
   opacity: 0.6; 
   z-index: -1;
 }
@@ -52,19 +51,19 @@
 .reception-detail {
   font-family: 'Cormorant Garamond', serif;
   font-size: 25px;
-  color: #800020;
+  color: #F8F1E7;
   font-weight: 800;
 }
 
 .reception-details a {
   font-family: 'Cormorant Garamond', serif;
   font-size: 25px;
-  color: #800020;
+  color: #F8F1E7;
   font-weight: 500;
 }
 
 .direction-link {
-  color: #800020;
+  color: #F8F1E7;
   font-weight: bold;
   text-decoration: none;
   margin-top: 20px;
@@ -93,7 +92,7 @@
 
 @media (max-width: 768px) {
   .venue-reception {
-    padding: 0 16px;
+    padding-bottom: 150px;
   }
 
   .venue-reception h1 {

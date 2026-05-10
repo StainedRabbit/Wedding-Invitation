@@ -1,6 +1,7 @@
 .album {
   padding: 4rem 2rem;
   background: #faf7f2;
+  margin: 1rem 0;
 }
 
 .album-grid {
@@ -35,4 +36,19 @@
 /* Video styling */
 .video-item video {
   height: 100%;
+}
+
+.photo-album h1{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Andasia', monospace;
+  color: #F8F1E7;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  .photo-album h1{
+    font-size: 3rem;
+  }
 }

@@ -1,0 +1,55 @@
+.mathew-mavic {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../images/mathew-mavic-background.jpg");
+
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+/* Logo at top */
+.mat-mavic-logo {
+    width: 200px;
+    height: auto;
+    align-self: center;
+}
+
+/* Text at bottom */
+.mathew-mavic h1 {
+    text-align: center;
+    color: white;
+    font-size: clamp(1.8rem, 6vw, 6rem);
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    font-weight: 300;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .mathew-mavic {
+        min-height: 50vh;
+    }
+
+    .mat-mavic-logo {
+        width: 100px;
+        margin-top: -30px;
+    }
+}

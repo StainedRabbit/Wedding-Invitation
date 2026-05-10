@@ -1,0 +1,25 @@
+.gift-guide h1{
+    text-align: center;
+    font-family: 'Andasia', serif;
+    font-size: 4rem;
+    color: #F8F1E7;
+    font-weight: 500;
+}
+
+.gift-guide p{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: #F8F1E7;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .gift-guide h1 {
+        font-size: 3rem;
+    }
+
+    .gift-guide p {
+        font-size: 1.2rem;
+    }
+}

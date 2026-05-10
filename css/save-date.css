@@ -1,8 +1,8 @@
 
 .save-date {
     text-align: center;
-    margin: 4rem 0;
-    padding: 2rem;
+    margin: 1rem 0;
+    /* padding: 2rem; */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     position: relative;
@@ -15,7 +15,6 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url('../images/background 4.png') center/cover no-repeat;
     opacity: 0.6;
     z-index: 0; /* lowest */
 }
@@ -41,10 +40,37 @@
     font-family: 'Andasia', serif;
     font-size: 7rem;
     font-weight: 540;
-    color: #800020;
+    color: #F8F1E7;
     letter-spacing: 4px;
     margin-bottom: 1.5rem;
 }
+
+.save-date .content {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.save-date {
+    --date-border-color: #ffffff;
+    --date-border-width: 2px;
+    --date-border-gap: 1.5rem;
+}
+
+/* .save-date .date,
+.save-date .time {
+    padding: 0 1.5rem;
+} */
+
+/* .save-date .date {
+    border-right: var(--date-border-width) solid var(--date-border-color);
+    padding-right: calc(1.5rem + var(--date-border-width));
+    margin-right: var(--date-border-gap);
+} */
 
 .datetime {
     display: flex;
@@ -52,19 +78,19 @@
     justify-content: center;
     gap: 2rem;
     font-size: 1.2rem;
-    color: #800020;
+    color: #F8F1E7;
 }
 
-.datetime span {
+/* .datetime span {
     padding: 0.5rem 1rem;
     background: #f5ebe0;
     border-radius: 30px;
-}
+} */
 
 
 .names {
     text-align: center;
-    color: #800020;
+    color: #F8F1E7;
 }
 
 .names h1 {
@@ -79,26 +105,29 @@
 .desc {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
+    color: #F8F1E7;
 }
 
 .date {
+    margin-left: 2rem;
+    padding-right: 2rem;
     font-family: 'Cormorant Garamond', serif;
     text-align: center;
     font-size: 3rem;
-    color: #800020;
-    border-right: 6px solid #800020;
-    padding-right: 20px;
+    color: #F8F1E7;
+    border-right: 7px solid #F8F1E7;
 }
 
 .time {
     font-family: 'Cormorant Garamond', serif;
     text-align: center;
     font-size: 2rem;
-    color: #800020;
+    color: #F8F1E7;
     font-weight: 600;
 }
 
-.day {
+.day {  
+    text-align: center;
     margin-top: -50px;
     margin-bottom: -50px;
     font-size: 10rem;
@@ -110,59 +139,29 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 6rem;
     margin: -20px;
-    color: #800020;
-}
-
-
-.content {
-    display: grid;
-    grid-template-columns: 1.5fr 3fr 1fr 1fr 1.5fr;
-    align-items: center;
-    gap: 20px;
+    color: #F8F1E7;
 }
 
 
 @media (max-width: 768px) {
-    .header {
-        gap: 0.5rem;
-    }
-    
-    .initial {
-        font-size: 2rem;
-    }
-    
-    .datetime {
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-
     .date {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
-    .wedding-party {
-        grid-template-columns: 1fr;
-    }
 
     .save-date h1{
         font-size: 3rem;
     }
 
-    .names h1{
-        font-size: 3rem;
-    }
-
-    .amp {
-        font-size: 3rem;
+    .time {
+        font-size: 1.5rem;
     }
 
     .desc {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     
     .day {
-        margin-top: -20px;
-        margin-bottom: -30px;
         font-size: 3rem;
         font-weight: 600;
     }
