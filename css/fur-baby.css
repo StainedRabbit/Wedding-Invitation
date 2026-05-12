@@ -1,0 +1,45 @@
+.fur-baby h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    color: #F8F1E7;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.fur-baby {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fur-baby p {
+    width: 100%;
+    text-align: center;
+    font-family: 'Andasia', serif;
+    font-size: 4rem;
+    color: #F8F1E7;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+.fur-baby-img {
+    display: block;
+    margin: 1rem auto;
+    width: 500px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .fur-baby h1 {
+        font-size: 3rem;
+    }
+    
+    .fur-baby-img {
+        width: 300px;
+    }
+}

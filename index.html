@@ -25,6 +25,12 @@
     <link rel="stylesheet" href="css/role.css">
     <link rel="stylesheet" href="css/gift-guide.css">
     <link rel="stylesheet" href="css/qr-section.css">
+    <link rel="stylesheet" href="css/snap-share.css">
+    <link rel="stylesheet" href="css/rsvp.css">
+    <link rel="stylesheet" href="css/fur-baby.css"> 
+    <link rel="stylesheet" href="css/reminder.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/photo-list.css">
 </head>
 <body class="main-content">
     <video class="bg-video" autoplay muted loop playsinline>
@@ -78,14 +84,23 @@
             <h1>MATHEW & MAVIC</h1>
         </div>
 
-        <!-- <div class="photo-list">
-            <img src="images/photo-4-raw.jpg" class="photo-list-item">
-            <img src="images/photo-2.jpg" class="photo-list-item">
-            <img src="images/photo-2.jpg" class="photo-list-item">
-            <img src="images/photo-2.jpg" class="photo-list-item">
-            <img src="images/photo-2.jpg" class="photo-list-item">
-            <img src="images/photo-2.jpg" class="photo-list-item">
-        </div> -->
+        <div class="photo-list">
+            <div class="photo-group group-1">
+                <img src="images/photo-4-raw.jpg" class="photo-list-item">
+                <img src="images/p1-removedbg.png" class="transparent-photo-item overlay-1">
+            </div>
+            <div class="photo-group group-2">
+                <img src="images/sky-photo.jpg" class="photo-list-item">
+                <img src="images/p2-removedbg.png" class="transparent-photo-item overlay-2a">
+                <img src="images/p4-removedbg.png" class="transparent-photo-item overlay-2b">
+            </div>
+            <div class="photo-group group-3">
+                <img src="images/sunset.jpg" class="photo-list-item">
+                <img src="images/p3-removedbg.png" class="transparent-photo-item overlay-3a">
+                <img src="images/p5-removedbg.png" class="transparent-photo-item overlay-3b">
+                <img src="images/p6-removedbg.png" class="transparent-photo-item overlay-3c">
+            </div>
+        </div>
 
         <div class="save-date">
             <h1>Save the Date</h1>
@@ -123,10 +138,11 @@
         <div class="photo-album">
             <h1>Prenup Photos and Videos</h1>
 
-            <button class="nav prev" id="prevBtn">&#10094;</button>
+            <div class="album-wrapper">
+                <button class="nav prev" id="prevBtn">&#10094;</button>
 
-            <div class="album-track" id="albumTrack">
-                <img src="images/DSC00029.JPG" alt="">
+                <div class="album-track" id="albumTrack">
+                    <img src="images/DSC00029.JPG" alt="">
                 <img src="images/DSC00040.JPG" alt="">
                 <img src="images/DSC00064.JPG" alt="">
                 <img src="images/DSC00138.JPG" alt="">
@@ -157,7 +173,8 @@
                 <img src="images/DSC00569.JPG" alt="">
             </div>
 
-            <button class="nav next" id="nextBtn">&#10095;</button>
+                <button class="nav next" id="nextBtn">&#10095;</button>
+            </div>
 
         </div>
 
@@ -256,10 +273,45 @@
         <div class="qr-section">
             <img class="qr" src="images/bpi.jpg" alt="BPI Code">
             <img class="qr" src="images/gcash.jpg" alt="GCash Logo">
-            
-            <h1>Snap and Share</h1>
         </div>
 
+        <div class="snap-share">
+            <h1>Snap and Share</h1>
+            <p>Help us capture the moments!</p>
+            <p>Share your photos with our wedding hashtag.</p>
+            <img src="images/hashtag.png" alt="Hashtag" class="hashtag">
+        </div>
+
+        <div class="reminder">
+            <h1>Reminders</h1>
+            <img src="images/reminders-removedbg.png" alt="Reminder" class="reminder-img">
+        </div>
+
+        <div class="rsvp">
+            <h1>RSVP</h1>
+
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLScfImaQgMii4VfdqPz0cGElIA3wlSx8xkvDDZFb-jCSqe3x_A/viewform?embedded=true" 
+                width="640" 
+                height="1200" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0"
+                scrolling="no">
+                Loading…
+            </iframe>
+        </div>
+
+        <div class="fur-baby">
+            <h1>WE CAN'T WAIT</h1>
+            <p>To hear from you</p>
+            <img src="images/DSC00568.JPG" alt="Fur Baby" class="fur-baby-img">
+        </div>
+
+        <div class="footer">
+            <h1>Mathew <span>&</span> Mavic</h1>
+            <p>June 12, 2026</p>
+        </div>
     </section>
 
 

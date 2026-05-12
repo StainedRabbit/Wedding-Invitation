@@ -12,17 +12,6 @@
     margin: 2rem;
 }
 
-.qr-section h1 {
-    width: 100%;
-    text-align: center;
-    font-family: 'Andasia', serif;
-    font-size: 4rem;
-    color: #F8F1E7;
-    letter-spacing: 2px;
-    margin-top: 1rem;
-    font-weight: 500;
-}
-
 @media (max-width: 768px) {
     
     .qr {
