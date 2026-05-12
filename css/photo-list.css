@@ -88,10 +88,61 @@
     }
 
     .photo-list-item {
-        max-width: 150px;
+        max-width: 280px;
     }
 
     .transparent-photo-item {
+        max-width: 100px;
+    }
+
+    .group-1 .photo-list-item {
+        max-width: 280px;
+    }
+
+    .group-2 .photo-list-item {
+        max-width: 240px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .group-3 .photo-list-item {
+        max-width: 260px;
+        margin-right: 0;
+    }
+
+    .overlay-1 {
         max-width: 120px;
+        top: 20px;
+        left: -30px;
+    }
+
+    .overlay-2a {
+        max-width: 100px;
+        top: 10px;
+        left: -40px;
+    }
+
+    .overlay-2b {
+        max-width: 90px;
+        bottom: -20px;
+        left: 50px;
+    }
+
+    .overlay-3a {
+        max-width: 110px;
+        top: -40px;
+        left: 10px;
+    }
+
+    .overlay-3b {
+        max-width: 95px;
+        top: 140px;
+        right: -40px;
+    }
+
+    .overlay-3c {
+        max-width: 85px;
+        top: 220px;
+        right: 10px;
     }
 }
