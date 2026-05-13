@@ -42,4 +42,8 @@
     .fur-baby-img {
         width: 300px;
     }
+
+    .fur-baby p {
+        font-size: 2rem;
+    }
 }
