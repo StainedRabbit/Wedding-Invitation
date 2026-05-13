@@ -100,7 +100,7 @@
     }
 
     .group-2 .photo-list-item {
-        max-width: 240px;
+        max-width: 280px;
         margin-left: 0;
         margin-bottom: 10px;
     }
@@ -143,6 +143,6 @@
     .overlay-3c {
         max-width: 85px;
         top: 220px;
-        right: 10px;
+        right: -30px;
     }
 }
